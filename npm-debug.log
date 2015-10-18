@@ -1,0 +1,179 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'zlib' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of D:\web_projects\intro_node\package.json
+5 verbose installManyTop reading scoped package data from D:\web_projects\intro_node\node_modules\request\package.json
+6 verbose installManyTop reading scoped package data from D:\web_projects\intro_node\node_modules\resource\package.json
+7 verbose readDependencies loading dependencies from D:\web_projects\intro_node\package.json
+8 silly cache add args [ 'zlib', null ]
+9 verbose cache add spec zlib
+10 silly cache add parsed spec { raw: 'zlib',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'zlib',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: '*',
+10 silly cache add   type: 'range' }
+11 silly addNamed zlib@*
+12 verbose addNamed "*" is a valid semver range for zlib
+13 silly addNameRange { name: 'zlib', range: '*', hasData: false }
+14 silly mapToRegistry name zlib
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/zlib
+18 verbose addNameRange registry:https://registry.npmjs.org/zlib not in flight; fetching
+19 verbose request uri https://registry.npmjs.org/zlib
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 12:40:00 PM
+22 verbose request id a3b2cbb8654bb8d1
+23 http request GET https://registry.npmjs.org/zlib
+24 http 200 https://registry.npmjs.org/zlib
+25 silly get cb [ 200,
+25 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly get     etag: '"5ZD8OZO6M8FVHQHJHDOOR2QN9"',
+25 silly get     'content-type': 'application/json',
+25 silly get     'cache-control': 'max-age=60',
+25 silly get     'content-length': '6093',
+25 silly get     'accept-ranges': 'bytes',
+25 silly get     date: 'Sun, 18 Oct 2015 01:39:57 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     age: '0',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-syd1625-SYD',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1445132396.722483,VS0,VE746',
+25 silly get     vary: 'Accept' } ]
+26 verbose get saving zlib to C:\Users\Haven\AppData\Roaming\npm-cache\registry.npmjs.org\zlib\.cache.json
+27 silly addNameRange number 2 { name: 'zlib', range: '*', hasData: true }
+28 silly addNameRange versions [ 'zlib',
+28 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5' ] ]
+29 silly addNamed zlib@1.0.5
+30 verbose addNamed "1.0.5" is a plain semver version for zlib
+31 silly mapToRegistry name zlib
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npmjs.org/
+34 silly mapToRegistry uri https://registry.npmjs.org/zlib
+35 verbose addRemoteTarball https://registry.npmjs.org/zlib/-/zlib-1.0.5.tgz not in flight; adding
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/zlib/-/zlib-1.0.5.tgz',
+36 verbose addRemoteTarball   '6e7c972fc371c645a6afb03ab14769def114fcc0' ]
+37 info retry fetch attempt 1 at 12:40:01 PM
+38 info attempt registry request try #1 at 12:40:01 PM
+39 http fetch GET https://registry.npmjs.org/zlib/-/zlib-1.0.5.tgz
+40 http fetch 200 https://registry.npmjs.org/zlib/-/zlib-1.0.5.tgz
+41 silly fetchAndShaCheck shasum 6e7c972fc371c645a6afb03ab14769def114fcc0
+42 verbose addTmpTarball C:\Users\Haven\AppData\Local\Temp\npm-1972-f6098e4f\registry.npmjs.org\zlib\-\zlib-1.0.5.tgz not in flight; adding
+43 verbose addTmpTarball already have metadata; skipping unpack for zlib@1.0.5
+44 silly cache afterAdd zlib@1.0.5
+45 verbose afterAdd C:\Users\Haven\AppData\Roaming\npm-cache\zlib\1.0.5\package\package.json not in flight; writing
+46 verbose afterAdd C:\Users\Haven\AppData\Roaming\npm-cache\zlib\1.0.5\package\package.json written
+47 silly install resolved [ { name: 'zlib',
+47 silly install resolved     description: 'Simple, synchronous deflate/inflate for buffers',
+47 silly install resolved     version: '1.0.5',
+47 silly install resolved     homepage: 'https://github.com/kkaefer/node-zlib',
+47 silly install resolved     author: { name: 'Konstantin Käfer', email: 'kkaefer@gmail.com' },
+47 silly install resolved     repository: { type: 'git', url: 'git://github.com/kkaefer/node-zlib.git' },
+47 silly install resolved     engines: { node: '>=0.2.0' },
+47 silly install resolved     licenses: [ [Object] ],
+47 silly install resolved     main: './lib/zlib',
+47 silly install resolved     _npmJsonOpts:
+47 silly install resolved      { file: '/Users/kkaefer/.npm/zlib/1.0.5/package/package.json',
+47 silly install resolved        contributors: false,
+47 silly install resolved        serverjs: false,
+47 silly install resolved        wscript: true },
+47 silly install resolved     _id: 'zlib@1.0.5',
+47 silly install resolved     scripts: { preinstall: 'node-waf clean || true; node-waf configure build' },
+47 silly install resolved     dependencies: {},
+47 silly install resolved     devDependencies: {},
+47 silly install resolved     _engineSupported: true,
+47 silly install resolved     _npmVersion: '1.0.23',
+47 silly install resolved     _nodeVersion: 'v0.4.9',
+47 silly install resolved     _defaultsLoaded: true,
+47 silly install resolved     dist:
+47 silly install resolved      { shasum: '6e7c972fc371c645a6afb03ab14769def114fcc0',
+47 silly install resolved        tarball: 'http://registry.npmjs.org/zlib/-/zlib-1.0.5.tgz' },
+47 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+47 silly install resolved     directories: {},
+47 silly install resolved     _shasum: '6e7c972fc371c645a6afb03ab14769def114fcc0',
+47 silly install resolved     _resolved: 'https://registry.npmjs.org/zlib/-/zlib-1.0.5.tgz',
+47 silly install resolved     _from: 'zlib@*' } ]
+48 info install zlib@1.0.5 into D:\web_projects\intro_node
+49 info installOne zlib@1.0.5
+50 verbose installOne of zlib to D:\web_projects\intro_node not in flight; installing
+51 verbose lock using C:\Users\Haven\AppData\Roaming\npm-cache\_locks\zlib-02121d5fe55f980c.lock for D:\web_projects\intro_node\node_modules\zlib
+52 silly install write writing zlib 1.0.5 to D:\web_projects\intro_node\node_modules\zlib
+53 verbose unbuild node_modules\zlib
+54 silly gentlyRm D:\web_projects\intro_node\node_modules\zlib is being purged from base D:\web_projects\intro_node
+55 verbose gentlyRm don't care about contents; nuking D:\web_projects\intro_node\node_modules\zlib
+56 verbose tar unpack C:\Users\Haven\AppData\Roaming\npm-cache\zlib\1.0.5\package.tgz
+57 verbose tar unpacking to D:\web_projects\intro_node\node_modules\zlib
+58 silly gentlyRm D:\web_projects\intro_node\node_modules\zlib is being purged
+59 verbose gentlyRm don't care about contents; nuking D:\web_projects\intro_node\node_modules\zlib
+60 silly gunzTarPerm modes [ '777', '666' ]
+61 silly gunzTarPerm extractEntry .gitignore
+62 silly gunzTarPerm modified mode [ '.gitignore', 420, 438 ]
+63 silly gunzTarPerm extractEntry configure
+64 silly gunzTarPerm modified mode [ 'configure', 493, 511 ]
+65 silly gunzTarPerm extractEntry index.js
+66 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+67 silly gunzTarPerm extractEntry LICENSE
+68 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+69 silly gunzTarPerm extractEntry Makefile
+70 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+71 silly gunzTarPerm extractEntry package.json
+72 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+73 silly gunzTarPerm extractEntry README.md
+74 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+75 silly gunzTarPerm extractEntry wscript
+76 silly gunzTarPerm modified mode [ 'wscript', 420, 438 ]
+77 silly gunzTarPerm extractEntry lib/zlib.js
+78 silly gunzTarPerm modified mode [ 'lib/zlib.js', 420, 438 ]
+79 silly gunzTarPerm extractEntry src/node-zlib.cc
+80 silly gunzTarPerm modified mode [ 'src/node-zlib.cc', 420, 438 ]
+81 silly gunzTarPerm extractEntry test/deflate.test.js
+82 silly gunzTarPerm modified mode [ 'test/deflate.test.js', 420, 438 ]
+83 silly gunzTarPerm extractEntry test/inflate.test.js
+84 silly gunzTarPerm modified mode [ 'test/inflate.test.js', 420, 438 ]
+85 verbose write writing to D:\web_projects\intro_node\node_modules\zlib\package.json
+86 info preinstall zlib@1.0.5
+87 verbose unsafe-perm in lifecycle true
+88 info zlib@1.0.5 Failed to exec preinstall script
+89 verbose unlock done using C:\Users\Haven\AppData\Roaming\npm-cache\_locks\zlib-02121d5fe55f980c.lock for D:\web_projects\intro_node\node_modules\zlib
+90 verbose stack Error: zlib@1.0.5 preinstall: `node-waf clean || true; node-waf configure build`
+90 verbose stack Exit status 1
+90 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+90 verbose stack     at EventEmitter.emit (events.js:110:17)
+90 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+90 verbose stack     at ChildProcess.emit (events.js:110:17)
+90 verbose stack     at maybeClose (child_process.js:1015:16)
+90 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+91 verbose pkgid zlib@1.0.5
+92 verbose cwd D:\web_projects\intro_node
+93 error Windows_NT 6.3.9600
+94 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "zlib"
+95 error node v0.12.7
+96 error npm  v2.11.3
+97 error code ELIFECYCLE
+98 error zlib@1.0.5 preinstall: `node-waf clean || true; node-waf configure build`
+98 error Exit status 1
+99 error Failed at the zlib@1.0.5 preinstall script 'node-waf clean || true; node-waf configure build'.
+99 error This is most likely a problem with the zlib package,
+99 error not with npm itself.
+99 error Tell the author that this fails on your system:
+99 error     node-waf clean || true; node-waf configure build
+99 error You can get their info via:
+99 error     npm owner ls zlib
+99 error There is likely additional logging output above.
+100 verbose exit [ 1, true ]
+101 verbose unbuild node_modules\zlib
+102 info preuninstall zlib@1.0.5
+103 info uninstall zlib@1.0.5
+104 verbose unbuild rmStuff zlib@1.0.5 from D:\web_projects\intro_node\node_modules
+105 info postuninstall zlib@1.0.5
+106 silly gentlyRm D:\web_projects\intro_node\node_modules\zlib is being purged from base D:\web_projects\intro_node
+107 verbose gentlyRm don't care about contents; nuking D:\web_projects\intro_node\node_modules\zlib
+108 silly vacuum-fs purging D:\web_projects\intro_node\node_modules\zlib
+109 silly vacuum-fs quitting because other entries in D:\web_projects\intro_node\node_modules

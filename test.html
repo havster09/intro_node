@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="user-scalable=no">
+    <title>RTS</title>
+    <!-- A* Implementation by Andrea Giammarchi -->
+    <script src="js/astar.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <!--<script src="../lib/jquery.touchSwipe.min.js"></script>-->
+
+    <script src="lib/soundjs-0.6.0.min.js"></script>
+
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/game.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mouse.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/singleplayer.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/multiplayer.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/maps.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/sidebar.js" type="text/javascript" charset="utf-8"></script>
+    <!--<script src="js/fog.js" type="text/javascript" charset="utf-8"></script>-->
+    <script src="js/sounds.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Definitions for game entities -->
+    <script src="js/ui.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/buildings.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/vehicles.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/armor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/turrets.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/aircraft.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/terrain.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/cover.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bullets.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/effects.js" type="text/javascript" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+<canvas id="gamebackgroundcanvas" height="400" width="480"></canvas>
+<canvas id="gameforegroundcanvas" height="400" width="480"></canvas>
+<div id="gamecontainer">
+    <div id="missionscreen" class="gamelayer">
+        <div id="missonbriefingContainer">
+        <div id="missonbriefing">Welcome to your first mission.</div>
+        <input type="button" value="ENTER MISSION" id="entermission" onclick = "singleplayer.play();">
+        <input type="button"  value="EXIT MISSION" id="exitmission" onclick = "singleplayer.exit();">
+        </div>
+    </div>
+    <div id="multiplayerlobbyscreen" class="gamelayer">
+        <div id="selectcontainer">
+            <p></p>
+            <label>Select Open Game</label>
+            <p></p>
+        <select id="multiplayergameslist" size="10"></select>
+        <p></p>
+        <input type="button" value="JOIN" id="multiplayerjoin" onclick="multiplayer.join();">
+        <input type="button" value="CANCEL" id="multiplayercancel" onclick="multiplayer.cancel();">
+        </div>
+    </div>
+    <div id="gameinterfacescreen" class="gamelayer">
+        <div id="gamemessages"></div>
+    </div>
+</div>
+<div id="gamestartscreen" class="gamelayer">
+    <span id="singleplayer" onclick = "singleplayer.start();">Singleplayer</span><br>
+    <span id="multiplayer" onclick = "multiplayer.start();">Multiplayer</span><br>
+</div>
+<div id="loadingscreen" class="gamelayer">
+    <div id="touchControls"></div>
+    <div id="loadingmessage"></div>
+</div>
+<div id="potrait_warning"><h2>Please change device orientation to Landscape</h2></div>
+<div id="messageboxscreen" class="gamelayer">
+    <div id="messagebox">
+        <p>
+        <span id="messageboxtext"></span>
+        <input type="button" value="ok" id="messageboxok" onclick="game.messageBoxOK();">
+        <input type="button" value="cancel" id="messageboxcancel" onclick="game.messageBoxCancel();">
+        </p>
+    </div>
+</div>
+</body>
+</html>
